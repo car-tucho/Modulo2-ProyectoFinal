@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0 ;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: bisque;
+}
+
+.navlinks{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+
+}
+.navlinks li{
+    margin-left: 20px;
+}
+
+.hero{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPL1wU6oDvzG2FaLM9X9x_mTG-hyzYwIwqmQ&s");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: aliceblue;
+    padding: 100px;
+}
