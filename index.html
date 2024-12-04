@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Cafetería</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+    </style>
+    <title>Cartucho Café</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/favico.js/6.0.0/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <h1>Mi Cafetería</h1>
+                <h1>Cartucho Café</h1>
             </div>
             <ul class="nav-links">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Menú</a></li>
+                <li><a href="#">Nuestra Historia</a></li>
                 <li><a href="#">Nosotros</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
@@ -23,35 +28,131 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h2>El mejor café de la ciudad</h2>
-            <p>Disfruta de una experiencia única con nuestros granos seleccionados.</p>
-            <button>Ver Menú</button>
+            <h2>La mejor cafetería de México.</h2>
+            <p>Atrévete a vivir la verdadera tradición cafetera mexicana.</p>
+            <div><button class="boton-menu">Ver Menú</button>
+            </div>
         </div>
     </section>
 
     <section class="featured-products">
-        <h2>Nuestros productos destacados</h2>
+        <h2>Lo más pedido.</h2>
         <div class="product-list">
             <div class="product">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt86DsU1Q3xw88uFHJBX_QMC8I3y-B6g4TyQ&s alt="Café 1">
-                <h3>Café Americano</h3>
+                <img src="https://baristaschool.vn/wp-content/uploads/2021/05/latte.jpg" alt="Café 1">
+                <h3>Latte</h3>
                 <p>Un clásico para comenzar el día.</p>
             </div>
             <div class="product">
-                <img src="images/cafe2.jpg" alt="Café 2">
-                <h3>Cappuccino</h3>
+                <img src="https://maquinasdehelado.com/cdn/shop/collections/frappebh.png?v=1695407522&width=480" alt="Café 2">
+                <h3>Frapuccino</h3>
                 <p>Espresso con leche cremosa.</p>
             </div>
             <div class="product">
-                <img src="images/cafe3.jpg" alt="Café 3">
-                <h3>Latte Macchiato</h3>
+                <img src="https://img.freepik.com/fotos-premium/matcha-frappuccino-taza-plastico_146105-11211.jpg" alt="Café 3">
+                <h3>Matcha Frapuccino</h3>
                 <p>Espresso con leche al vapor.</p>
             </div>
         </div>
     </section>
+    <section class="postres">
+        <h2>El estilo mexicano en postres.</h2>
+        <div class="grid-container">
+        <div class="postre">
+            <img src="https://editorialtelevisa.brightspotcdn.com/37/d2/19584e074f688d7d5e5967459a4f/marquesitas.jpg" alt="Autenticas Marquesitas">
+            <h3>Marquesitas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quae velit temporibus qui nam nisi accusantium officia beatae sit quisquam ipsa illum quaerat modi, dolores vitae voluptate quam deserunt quo?</p>
+            
+        </div>
+
+        <div class="postre">
+            <img src="https://www.thespruceeats.com/thmb/M0jmA0EVa9-ejsbCMJG3nH5YLTg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/arroz-con-leche-mexican-rice-pudding-2343000-hero-07-07777a21c5e245cbb9e572158b2fcddc.jpg" alt="Arrroz Rico">
+            <h3>Arroz con Leche</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat incidunt accusantium vitae perspiciatis autem veniam optio sequi magni distinctio deserunt eaque accusamus nobis voluptatem enim, esse cumque id facere. Nostrum?</p>
+            
+        </div>
+        <div class="postre">
+            <img src="https://editorialtelevisa.brightspotcdn.com/37/d2/19584e074f688d7d5e5967459a4f/marquesitas.jpg" alt="Autenticas Marquesitas">
+            <h3>Marquesitas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quae velit temporibus qui nam nisi accusantium officia beatae sit quisquam ipsa illum quaerat modi, dolores vitae voluptate quam deserunt quo?</p>
+            
+        </div>
+
+        <div class="postre">
+            <img src="https://www.thespruceeats.com/thmb/M0jmA0EVa9-ejsbCMJG3nH5YLTg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/arroz-con-leche-mexican-rice-pudding-2343000-hero-07-07777a21c5e245cbb9e572158b2fcddc.jpg" alt="Arrroz Rico">
+            <h3>Arroz con Leche</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat incidunt accusantium vitae perspiciatis autem veniam optio sequi magni distinctio deserunt eaque accusamus nobis voluptatem enim, esse cumque id facere. Nostrum?</p>
+            
+        </div>
+        <div class="postre">
+            <img src="https://editorialtelevisa.brightspotcdn.com/37/d2/19584e074f688d7d5e5967459a4f/marquesitas.jpg" alt="Autenticas Marquesitas">
+            <h3>Marquesitas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quae velit temporibus qui nam nisi accusantium officia beatae sit quisquam ipsa illum quaerat modi, dolores vitae voluptate quam deserunt quo?</p>
+            
+        </div>
+
+        <div class="postre">
+            <img src="https://www.thespruceeats.com/thmb/M0jmA0EVa9-ejsbCMJG3nH5YLTg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/arroz-con-leche-mexican-rice-pudding-2343000-hero-07-07777a21c5e245cbb9e572158b2fcddc.jpg" alt="Arrroz Rico">
+            <h3>Arroz con Leche</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat incidunt accusantium vitae perspiciatis autem veniam optio sequi magni distinctio deserunt eaque accusamus nobis voluptatem enim, esse cumque id facere. Nostrum?</p>
+            
+        </div>
+        </div>
+
+    </section>
+
+    <section class="equipo">
+        <h2>Nuestro Equipo</h2>
+        <div class="equipo-container">
+        <div class="miembro">
+            <img src="" alt="">
+            <h3>Carlos</h3>
+            <p>Socio fundador</p>
+        </div>
+        <div class="miembro">
+            <img src="" alt="">
+            <h3>Yesleny</h3>
+            <p>Socia fundadora</p>
+        </div>
+        <div class="miembro">
+            <img src="" alt="">
+            <h3>Daniel</h3>
+            <p>Responsable de calidad y ateción a clinetes</p>
+        </div>
+        <div class="miembro">
+            <img src="" alt="">
+            <h3>Guille</h3>
+            <p>Reponsable de area de contabilidad y finanzas</p>
+        </div>
+        <div class="miembro">
+            <img src="" alt="">
+            <h3>Adelina</h3>
+            <p>Responsable de cocina</p>
+        </div>
+    </div>
+    </section>
+
 
     <footer>
-        <p>&copy; 2023 Mi Cafetería</p>
+        <div class="footer-container">
+        <div class="social-media">
+            <a href="#"><i></i></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+        <div class="newsletter">
+            <h3>Suscribete para recibir increíbles promociones.</h3>
+            <form action="">
+            <input type="email" placeholder ="Ingresa tu correo electrónico" required>
+            <button type="submit">Suscribirse</button>        
+
+
+            </form>
+        </div>
+
+        </div>
+        <p>&copy; 2024 Cartucho Café</p>
+        <p>Creado por: Carlos D. Sánchez</p>
     </footer>
 </body>
 </html>
