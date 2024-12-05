@@ -15,6 +15,7 @@ body{
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
+    background-color:rgb(165, 144, 120) ;
 }
 
 .navbar{
@@ -22,12 +23,26 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: bisque;
+    background-color: rgb(77, 63, 47);
     font-size: 18px;
     
 }
+.logo{
+    display: flex;
+    flex-direction: row;
+    
+}
+.logo h1{
+    font-size: xx-large;
+    color: beige;
+}
+.logo img{
+    width: 50%;
+    margin-top: 0;
+}
 
 .nav-links{
+    /*Quitar viñetas*/
     list-style: none;
     margin: 0;
     padding: 0;
@@ -36,48 +51,60 @@ body{
 
 }
 .nav-links li{
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .nav-links li a{
-    color: rgb(54, 41, 24);
-    text-decoration: none;
+    color: beige; /*Cambiar color de enlaces*/
+    text-decoration: none; /*Quitar subrayado*/
 }
 
-
+/*Estilos de la seccion hero*/
 .hero{
     background-image: url("https://png.pngtree.com/background/20230518/original/pngtree-cafe-with-dark-wooden-furniture-and-windows-picture-image_2645159.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
     color: aliceblue;
-    padding: 100px;
+    padding: 120px;
 }
 
 .hero-content{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color:beige
 }
 
 .hero h2{
     font-size: 3rem;
     margin-bottom: 20px;
+    
+}
+
+.hero-content p{
+    font-size: large;
+    font-style: italic;
 }
 
 .contenedor-boton{
     padding-top: 35px;
+    padding-bottom: 0px;
 
 }
 
 .boton-menu{
     margin: 15px;
-    padding: 5px;
-    background-color: rgb(53, 40, 0);
-    color: aliceblue;
+    padding: 10px;
+    border-radius: 20%;
+    border-width: 0px;
+    font-family: "Lexend",sans-serif;
+    font-size: 15px;
+    background-color: rgb(77, 63, 47);
+    color: beige;
 }
 /*Seccion de productos*/
 .featured-products, .postres, .equipo{
-    padding: 50px;
+    padding: 25px;
     text-align: center;
 }
 
@@ -98,7 +125,7 @@ body{
     object-fit: cover;
     margin-bottom: 10px;
 }
-
+/*Seccion de postres*/
 .grid-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); /*Responsive*/
@@ -110,9 +137,9 @@ body{
     height: 200px;
     object-fit: cover;
 }
-
+/*Seccion de personal*/
 .equipo{
-    background-color: bisque;
+    background-color: rgb(250, 238, 204);
 }
 
 .equipo-container{
@@ -121,23 +148,38 @@ body{
     flex-wrap: wrap;
 }
 
+.equipo h2{
+    margin-bottom: 25px;
+}
 .miembro{
     width: 200px;
     margin-bottom: 35px;
 }
 /*Sección de personal*/
 .miembro img{
-    width: 150%;
+    width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
-ñl
+
 
 /*Estilos del pie de pagina*/
 footer{
-    background-color: rgb(140, 106, 76);
+    background-color: rgb(77, 63, 47);
     color:antiquewhite;
     text-align: center;
     padding: 10px 0;
+}
+
+.social-media{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.social-media i{
+    font-size: 40px;
+    color: beige;
+    justify-content: center;
+
 }
