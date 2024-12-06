@@ -124,6 +124,7 @@ body{
     height: 70%;
     object-fit: cover;
     margin-bottom: 10px;
+    border-radius: 10%;
 }
 /*Seccion de postres*/
 .grid-container{
@@ -136,6 +137,22 @@ body{
     width: 280px;
     height: 200px;
     object-fit: cover;
+    border-radius: 10%;
+}
+
+.historia{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlCxqnskwHYAY9LK9eUH2Sb6r1Rv_8gjAlDA&s);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: aliceblue;
+    padding: 150px;
+}
+.historia h2{
+    font-family: "Lexend";
+    font-size: 50px;
+    justify-content: center;
+
 }
 /*Seccion de personal*/
 .equipo{
@@ -171,15 +188,79 @@ footer{
     text-align: center;
     padding: 10px 0;
 }
+.footer-container{
+    display: flex;
+    flex-direction: column;
+}
 
 .social-media{
-    display: flex;
-    align-items:center;
-    justify-content: space-around;
+    margin-bottom: 10px;
+    
 }
-.social-media i{
-    font-size: 40px;
+.social-media a{/*Enlaces*/
+    /*Colores y tamaño de mis iconos*/
+    font-size: 50px;
     color: beige;
-    justify-content: center;
-
+    margin: 0 10px;
 }
+
+
+.newsletter{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.newsletter h3{
+    margin-bottom: 20px;
+}
+
+.newsletter input[type="email"]{
+    padding: 8px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.newsletter button[type="submit"]{
+    background-color: rgb(139, 122, 100);
+    color:white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Lexend", sans-serif;
+}
+.desayunos{
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.grid-desayuno{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px;
+    grid-template-areas: 
+    "chilaquiles1 chilaquiles1 chilaquiles2 chilaquiles3"
+    "chilaquiles1 chilaquiles1 chilaquiles4 chilaquiles5";
+}
+
+.chilaquiles{
+    border-radius: 10%;
+    padding: 20px;
+}
+
+.chilaquiles img{
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10%;
+}
+.chilaquiles:nth-child(1) {grid-area: chilaquiles1;}
+.chilaquiles:nth-child(2) {grid-area: chilaquiles2;}
+.chilaquiles:nth-child(3) {grid-area: chilaquiles3;}
+.chilaquiles:nth-child(4) {grid-area: chilaquiles4;}
+.chilaquiles:nth-child(5) {grid-area: chilaquiles5;}
