@@ -25,6 +25,9 @@ body{
     padding: 20px;
     background-color: rgb(77, 63, 47);
     font-size: 18px;
+    position: fixed;
+    width: 96vw;
+
     
 }
 .logo{
@@ -69,6 +72,7 @@ body{
 }
 
 .hero-content{
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,6 +82,7 @@ body{
 .hero h2{
     font-size: 3rem;
     margin-bottom: 20px;
+    color:beige
     
 }
 
@@ -106,8 +111,11 @@ body{
 .featured-products, .postres, .equipo{
     padding: 25px;
     text-align: center;
+    color:beige;
 }
-
+.postres h2{
+    font-size:xx-large;
+}
 .product-list{
     display: flex;
     justify-content: space-around;

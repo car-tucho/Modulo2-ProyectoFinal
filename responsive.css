@@ -1,0 +1,36 @@
+/*Media queries*/
+/*Para pantallas pequeñas*/
+@media screen and (max-width:768px){
+    /*Reglas de CSS ordinarias*/
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .nav-links li{
+        margin: 10px 0;
+    }
+
+    .hero h2{
+        font-size: 2rem;
+    }
+    }
+
+    /*Para pantallas medianas*/
+    @media screen and (max-width:768px) and (max-width:1024px){
+        /*Reglas de CSS ordinarias*/
+        .product-list{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product{
+            width: 45%;
+        }
