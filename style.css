@@ -26,7 +26,7 @@ body{
     background-color: rgb(77, 63, 47);
     font-size: 18px;
     position: fixed;
-    width: 96vw;
+    width: 97vw;
 
     
 }
@@ -63,24 +63,29 @@ body{
 
 /*Estilos de la seccion hero*/
 .hero{
-    background-image: url("https://png.pngtree.com/background/20230518/original/pngtree-cafe-with-dark-wooden-furniture-and-windows-picture-image_2645159.jpg");
-    background-size: cover;
-    background-position: center;
-    text-align: center;
+    display: flex; 
     color: aliceblue;
-    padding: 120px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
 }
 
 .hero-content{
-    margin-top: 70px;
     display: flex;
+    margin-top: 0px;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     color:beige
 }
 
 .hero h2{
-    font-size: 3rem;
+    font-size: 50px;
     margin-bottom: 20px;
     color:beige
     
@@ -89,8 +94,22 @@ body{
 .hero-content p{
     font-size: large;
     font-style: italic;
+    font-size: 30px;
 }
 
+.hero video {
+    background: cover; 
+    align-self: start;
+    position: absolute;
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+    z-index: -1;
+    margin-top: 0%;
+    margin-left: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
 .contenedor-boton{
     padding-top: 35px;
     padding-bottom: 0px;
@@ -100,22 +119,58 @@ body{
 .boton-menu{
     margin: 15px;
     padding: 10px;
-    border-radius: 20%;
+    border-radius: 25px;
     border-width: 0px;
     font-family: "Lexend",sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     background-color: rgb(77, 63, 47);
     color: beige;
 }
 /*Seccion de productos*/
 .featured-products, .postres, .equipo{
-    padding: 25px;
+    padding: 0px;
     text-align: center;
-    color:beige;
+    color:rgb(77, 63, 47);
+
+}
+
+.featured-products img:hover{
+scale: 1.06;
+transform: rotate(2deg);
+
+}
+
+.postres img:hover{
+    scale: 1.06;
+    transform: rotate(2deg);
+    
+    }
+.featured-products h2{
+    font-size:40px;
+    margin-top: 0;
+    color: beige;
 }
 .postres h2{
-    font-size:xx-large;
+    font-size:40px;
+    color: beige;
 }
+
+.equipo h2{
+    font-size:30px;
+}
+.product p{
+    font-size: 17px;
+    color: beige;
+}
+.postres p{
+    font-size: 17px;
+    color: beige;
+}
+
+.postre img{
+    transition: all 0.3s ease-in-out;
+}
+
 .product-list{
     display: flex;
     justify-content: space-around;
@@ -123,16 +178,17 @@ body{
 }
 
 .product{
-    width: 300px;
+    width: 330px;
     margin-bottom: 30px;
 }
 
 .product img{
-    width:100%;
+    width:80%;
     height: 70%;
     object-fit: cover;
     margin-bottom: 10px;
     border-radius: 10%;
+    transition: all 0.3s ease-in-out;
 }
 /*Seccion de postres*/
 .grid-container{
@@ -142,26 +198,53 @@ body{
 }
 
 .postre img{
-    width: 280px;
-    height: 200px;
+    width: 300px;
+    height: 240px;
     object-fit: cover;
     border-radius: 10%;
 }
-
-.historia{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlCxqnskwHYAY9LK9eUH2Sb6r1Rv_8gjAlDA&s);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    color: aliceblue;
-    padding: 150px;
-}
-.historia h2{
-    font-family: "Lexend";
-    font-size: 50px;
+.titulo{
+    display: flex;
+    align-items: center;
     justify-content: center;
 
 }
+
+.titulo h2{
+    text-align: center;
+    padding-top: 15px;
+    font-family: "Lexend";
+    font-size: 40px;
+    color: rgb(62, 59, 55);
+    justify-content: center;
+    align-items: center;
+    
+}
+.historia{
+    display: flex;
+    text-align: justify;
+    font-size: 17px;
+    align-items: center; /* Alinear elementos verticalmente */
+    gap: 20px; /* Espacio entre la imagen y la descripción */
+    padding: 45px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: rgb(62, 59, 55)
+}
+
+.historia img{
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    
+
+}
+.historia img:hover{
+    transform: scale(1.06);
+    
+}
+
 /*Seccion de personal*/
 .equipo{
     background-color: rgb(250, 238, 204);
@@ -171,10 +254,13 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    color: rgb(77, 63, 47);
 }
 
 .equipo h2{
     margin-bottom: 25px;
+    color: rgb(77, 63, 47);
+    
 }
 .miembro{
     width: 200px;
@@ -241,9 +327,22 @@ footer{
     font-family: "Lexend", sans-serif;
 }
 .desayunos{
-    padding: 10px;
+    padding: 0px;
     text-align: center;
     margin-bottom: 100px;
+}
+
+.desayunos h2{
+    font-size: 40px;
+    color: beige;
+
+}
+
+.desayunos h3{
+    color: rgb(77, 63, 47);
+}
+.desayunos p{
+    color: beige;
 }
 .grid-desayuno{
     display: grid;
@@ -262,13 +361,71 @@ footer{
 
 .chilaquiles img{
     width: 90%;
-    height: 80%;
+    height: 85%;
     object-fit: cover;
     margin-bottom: 10px;
     border-radius: 10%;
+    
 }
+
+.chilaquiles:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.06);
+}
+
+
 .chilaquiles:nth-child(1) {grid-area: chilaquiles1;}
 .chilaquiles:nth-child(2) {grid-area: chilaquiles2;}
 .chilaquiles:nth-child(3) {grid-area: chilaquiles3;}
 .chilaquiles:nth-child(4) {grid-area: chilaquiles4;}
 .chilaquiles:nth-child(5) {grid-area: chilaquiles5;}
+/*Bebidas*/
+.bebidas{
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.bebidas h2{
+    font-size: 40px;
+    color: beige;
+
+}
+.bebidas h3{
+    color: rgb(77, 63, 47);
+}
+.bebidas p{
+    color: beige;
+}
+.grid-bebidas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px;
+    grid-template-areas: 
+    "bebida2 bebida3 bebida1 bebida1"
+    "bebida4 bebida5 bebida1 bebida1";
+}
+
+.bebida{
+    border-radius: 10%;
+    padding: 20px;
+}
+
+.bebida img{
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    
+}
+.bebida:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.06);
+}
+
+.bebida:nth-child(1) {grid-area: bebida1;}
+.bebida:nth-child(2) {grid-area: bebida2;}
+.bebida:nth-child(3) {grid-area: bebida3;}
+.bebida:nth-child(4) {grid-area: bebida4;}
+.bebida:nth-child(5) {grid-area: bebida5;}
